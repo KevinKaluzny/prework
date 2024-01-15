@@ -1,0 +1,301 @@
+/* Variables */
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Catamaran", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 108px 0;
+}
+
+.section-title {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+  font-family: "Catamaran", sans-serif;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #10ac84;
+}
+
+.row::before,
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+button {
+  background: #10ac84;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  margin: 30px auto 0 auto;
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+  border-style: outset;
+  border-color: #10ac84;
+}
+
+button:hover {
+  background: #09654e;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/1.jpg");
+  background-position: center 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash i {
+  font-size: 30px;
+  background: #10ac84;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.page-title {
+  color: white;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 2px 6px black;
+  word-spacing: 8px;
+  margin: 48px 0 0 0;
+  position: relative;
+  font-family: "Catamaran", sans-serif;
+}
+
+.page-title::after {
+  position: absolute;
+  content: "";
+  bottom: -14px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #10ac84;
+}
+
+.page-subtitle {
+  margin: 48px 0 0 0;
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 1px 3px black;
+  color: #fff;
+}
+
+/* Intro */
+.intro {
+  background: #fff;
+}
+
+.intro p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 48px 0;
+  font-size: 24px;
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+  font-family: "Catamaran", sans-serif;
+}
+
+/* About */
+.about {
+  background: #f0f0f0;
+}
+
+/* Skills */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  position: relative;
+  height: 290px;
+}
+
+.skill-image {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skill-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+
+.skill.right .skill-image {
+  right: 0;
+}
+
+.skill.right .skill-description {
+  padding: 36px 55% 36px 0;
+  text-align: right;
+}
+
+.skill.left .skill-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+}
+
+.skill-title {
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.skill-image img:hover {
+  transform: scale(2);
+}
+
+/* Gallery */
+.gallery li {
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery li::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: none;
+}
+
+.gallery .see-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+
+.gallery li:hover::after {
+  display: block;
+}
+
+.gallery li:hover .see-details {
+  display: block;
+}
+
+.gallery h4 {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.gallery ul button {
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Contact */
+.contact {
+  background: #171717;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+form {
+  width: 360px;
+  margin: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 35px;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  display: block;
+}
+
+/* Footer */
+.page-footer {
+  background: #242424;
+  color: #fff;
+}
+
+.page-footer p {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
