@@ -1,6 +1,14 @@
 # Prework
 
-This was my first project in the "Frontend React" course. It is a simple one-page website built with HTML, CSS and SCSS.
+## Description
+
+This one-page website was my first project in the "Frontend React" course. It is a simple portfolio and has a pretty and original design.
+
+## Used Technologies
+
+- HTML
+- CSS
+- SCSS
 
 ## Version
 
